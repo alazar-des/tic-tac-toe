@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tic-tac-toe Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <select name="level" id="select-level">
+        <option value="easy" selected>Easy</option>
+        <option value="impossible">Impossible</option>
+        <option value="friend">Against a friend</option>
+      </select>
+      <div class="players">
+        <div class="player-x">
+          <div class="mark">X</div>
+          <div class="score">0</div>
+        </div>
+        <div class="player-o">
+          <div class="mark">O</div>
+          <div class="score">0</div>
+        </div>
+      </div>
+      <div class="next-player"><span></span> turn</div>
+    </div>
+    <div class="board-container">
+      <div class="gameboard">
+        <div pos="00" class="key"></div>
+        <div pos="01" class="key"></div>
+        <div pos="02" class="key"></div>
+        <div pos="10" class="key"></div>
+        <div pos="11" class="key"></div>
+        <div pos="12" class="key"></div>
+        <div pos="20" class="key"></div>
+        <div pos="21" class="key"></div>
+        <div pos="22" class="key"></div>
+      </div>
+      <div class="winner">
+        <h1></h1>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="reset">Reset Game</button>
+    </div>
+  </div>
+</body>
+</html>
